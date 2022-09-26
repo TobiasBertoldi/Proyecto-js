@@ -244,94 +244,33 @@ agregarMat.addEventListener("click", () => {
 
 
 })
-/* class notaAlumno{
 
-   constructor(nota,AoD){
-      this.nota = nota;
-      this.AoD = AoD
-   }
+//comente la api por el hecho de que no tiene nada que ver con mi ptoyecto para que se vea mejor visualmente
+//pero para que de todas maneras puedan ver como traje los datos de la api y que cumpli con la consigna.
+
+/*function obtenerDatos() {
+   
+   fetch('https://api.nasa.gov/planetary/apod?api_key=3f1ZgwyCNvNceRdRzmM2mHelf25phGHaVa3O7rIk')
+      .then(response => response.json())
+      .then(result => mostrarDatos(result))
 }
 
-let notas = [];
-let AoD;
-let nota;
+function mostrarDatos({date, explanation, media_type, title, url}){
 
-const btn1 = document.querySelector(".boton1");
-
-btn1.addEventListener("click", () =>{
-
-   let nota1 = Number(document.querySelector(".nota1").value);
-   let nota2 = Number(document.querySelector(".nota2").value);
-   let nota3 = Number(document.querySelector(".nota3").value);
-   let nota4 = Number(document.querySelector(".nota4").value);
-
-   if (nota1 == "" || nota2 == "" || nota3 == "") {
-      Swal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'Campo Obligatorio',
-        confirmButtonText: 'Confirmar'
-      });
-   }else{
-      Swal.fire({
-        icon: 'success',
-        title: 'Promediaste las notas',
-        confirmButtonText: 'Confirmar'
-      });
-   }
-    
-   nota1 >= 1 && nota1 <= 10  && nota1 < 7 && notas.push(new notaAlumno(nota1, " Desaprobado"))
+   const titulo = document.querySelector(".title");
+   titulo.innerHTML = title;
    
-   nota1 >= 1 && nota1 <= 10  && nota1 >= 7 && notas.push(new notaAlumno(nota1, " Aprobado"))
+   const multimedia = document.querySelector(".multimedia");
+   multimedia.innerHTML = `<img src="${url}" class="img-fluid" alt="${url}">`
    
-   nota2 >= 1 && nota2 <= 10  && nota2 < 7 && notas.push(new notaAlumno(nota2, " Desaprobado"))
+   const fecha = document.querySelector(".fecha");                        
+   fecha.innerHTML = date;                        
    
-   nota2 >= 1 && nota2 <= 10  && nota2 >= 7 && notas.push(new notaAlumno(nota2, " Aprobado"))
+   const exp = document.querySelector(".explicacion"); 
+   exp.innerHTML = explanation;    
    
-   nota3 >= 1 && nota3 <= 10  && nota3 < 7 && notas.push(new notaAlumno(nota3, " Desaprobado"))
-   
-   nota3 >= 1 && nota3 <= 10  && nota3 >= 7 && notas.push(new notaAlumno(nota3, " Aprobado"))
-
-   nota4 >= 1 && nota4 <= 10  && nota4 < 7 && notas.push(new notaAlumno(nota4, " Desaprobado"))
-   
-   nota4 >= 1 && nota4 <= 10  && nota4 >= 7 && notas.push(new notaAlumno(nota4, " Aprobado"))
-     
-   let prom1 = (nota1 + nota2 + nota3) / 3;
-   document.querySelector(".promedio").innerHTML = prom1;
-   
-   sessionStorage.setItem("nota1", JSON.stringify(nota1));
-   sessionStorage.setItem("nota2", JSON.stringify(nota2));
-   sessionStorage.setItem("nota3", JSON.stringify(nota3));
-   sessionStorage.setItem("nota4", JSON.stringify(nota4));
-   
-   console.log(notas);
-});
-
-
-
-const btn2 = document.querySelector(".boton2");
-
-btn2.addEventListener("click", () =>{
-   
-   let tr1 = document.querySelectorAll(".hover")[3]; 
-   let nuevaNota1 = "<td>Nota 4: </td><td><input class=nota4 type=number name=nota placeholder=0 ><td/>"
-   tr1.innerHTML = nuevaNota1;
   
-});
-
-/*const btn3 = document.querySelector(".boton2");
-
-btn3.addEventListener("click", () =>{
    
-   let tr = document.querySelectorAll(".hover")[4]; 
-   let nuevaNota = "<td>Nota 5: </td><td><input class=nota5 type=number name=nota placeholder=0 ><td/>"
-   tr.innerHTML = nuevaNota;
-  
-});*/
+};
 
-/*Swal.fire({
-   icon: 'error',
-   title: 'Oops...',
-   text: 'Something went wrong!',
-   footer: '<a href="">Why do I have this issue?</a>'
-})*/
+obtenerDatos();*/
