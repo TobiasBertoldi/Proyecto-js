@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #632432;
+}
+.navbar{
+	width: 100%;
+	background-color: #bfbfbf;
+	border-bottom: 4px solid #767676;
+	height: 50px;
+	z-index: 100;
+	transition: 120ms;
+	position: fixed;
+}
+.navbar:hover{
+	height: 70px;
+}
+.navbar-link{
+	text-decoration: none;
+	color: #000;
+	font-size: 1.2rem;
+}
+.navbar-link:hover{
+	color: #fff;
+}
+.container-fluid .active{
+	color: #fff;
+	border-bottom: 2px solid #632432;
+}
+.titulo{
+	padding-left: 1rem;
+}
+.titulo-instruc{
+	color: #fff;
+	text-decoration: underline double #fff;
+}
+.texto-instruc{
+	color: #fff;
+	margin: 0 1rem;
+}
+.notas{
+	padding-left: 1rem;
+}
+.prom{
+	margin-top: 1rem;
+	padding-left: 2rem;
+}
+.btn{
+	width: 150px;
+	margin: 1rem 0 1rem 1rem;
+	padding: 0.2rem;
+}
+.contenedor{
+	height: 100%;
+	padding-top: 120px;
+	margin: auto 150px;
+}
+.tabla{
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+thead{
+	background-color: #198754;
+	border-bottom: solid 3px #186e46;
+}
+tr:nth-child(even){
+	background-color: #ddd;
+}
+.btn-green{
+	background-color: #198754;
+}
+.nuevaNota{
+	width: 80px;
+	margin: 1rem 0 1rem 0.5rem;
+}
+.resultado{
+	margin-top: 1rem;
+	padding-left: 1.3rem;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+.nuevaMateria{
+	margin-left: 0.5rem;
+}
+.hover:hover{
+	background-color: #ff6573;
+	border-bottom: solid 3px #B22222
+}
+.hover2:hover{
+	background-color: #7fffc3;
+	border-bottom: solid 3px #228B22
+}
+.desaprobado{
+	color: #B22222;
+}
+.aprobado{
+	color: #228B22;
+}
+.left{
+	border-left: solid 1px #000;
+}
+.right{
+	border-right: solid 1px #000;
+}
+td{
+	border-bottom: solid 1px #000;
+}
