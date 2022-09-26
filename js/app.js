@@ -245,7 +245,7 @@ agregarMat.addEventListener("click", () => {
 
 })
 
-//comente la api por el hecho de que no tiene nada que ver con mi ptoyecto para que se vea mejor visualmente
+//comente la api por el hecho de que no tiene nada que ver con mi proyecto, para que se vea mejor visualmente
 //pero para que de todas maneras puedan ver como traje los datos de la api y que cumpli con la consigna.
 
 /*function obtenerDatos() {
